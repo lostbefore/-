@@ -1,0 +1,53 @@
+    .brush-cursor {
+    pointer-events: none; 
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    transition: width 0.1s, height 0.1s, opacity 0.5s; 
+    animation: fadeOut 0.5s forwards;
+    opacity: 0.8;
+    position: fixed;
+    z-index: 6;
+    top: -25px;
+    left: -25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+    body{
+    cursor: none; 
+    }
+  
+    @keyframes fadeOut {
+    to {
+    opacity: 0;
+    transform: scale(1.4); 
+    }
+  
+    }
+    .custom-cursor-inner {
+      position: fixed;
+      pointer-events: none;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background: rgb(33, 139, 38);
+      z-index: 10000;
+      transform: translate(-50%, -50%);
+    }
+  
+    .custom-cursor-outer {
+      position: fixed;
+      pointer-events: none;
+      border: 2px solid  rgba(27, 125, 45, 0.7);
+      border-radius: 50%;
+      width: 40px; 
+      height: 40px; 
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+    }

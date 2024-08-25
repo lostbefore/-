@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>艺心苑</title>
+  <link rel="icon" type="image/png" href="..\logo群\logo3.png">
+  <link rel="stylesheet" href="css/cursor.css">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+<style>
+  .big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    margin-top: 70px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 3px solid #1d553e;
+    color: rgba(39, 80, 83, 0.9);
+    font-size: 50px;
+  }
+
+  .small {
+    display: inline-block;
+    margin: 10px 30px;
+    padding-left: 70px;
+    width: 250px;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    background-color: #3c6440;
+    box-shadow: 2px 2px 5px #626161;
+    font-size: 16px;
+    writing-mode: vertical-lr;
+    z-index: 9999;
+  }
+
+
+
+  .small:hover {
+    transform: scale(1.2);
+    transition: 1s;
+  }
+
+  .small:hover span {
+    color: rgb(230, 172, 205);
+  }
+
+  .subtitle {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .at-item {
+    animation: shutter-in-top 1s linear 0s 1 normal none;
+    -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+
+  }
+
+  @keyframes shutter-in-top {
+
+    0% {
+      transform: rotateX(-100deg);
+      transform-origin: top;
+      opacity: 0;
+    }
+
+    100% {
+      transform: rotateX(0deg);
+      transform-origin: top;
+      opacity: 1;
+    }
+  }
+</style>
+
+<body>
+  <header>
+    <div class="nav-header">
+      <img src="..\logo群\logo3.png" alt="">
+      <img src="img\字体.png" alt="" style="width: 130px;">
+    </div>
+    <div class="navbar-brandE">
+      <ul>
+        <li class="hover-underline-animation"><a href="index.html">养生道</a></li>
+        <li class="hover-underline-animation"><a href="养生行.html">养生行</a></li>
+        <li class="hover-underline-animation"><a href="养生会.html">养生会</a></li>
+        <li class="hover-underline-animation"><a href="养生鉴.html">养生鉴</a></li>
+        <li class="hover-underline-animation"><a href="膳食阁.html">膳食阁</a></li>
+        <li class="hover-underline-animation"><a href="养生肆.html">养生肆</a></li>
+        <li class="hover-underline-animation"><a href="艺心苑.html">艺心苑</a></li>
+        <li class="hover-underline-animation"><a href="道我庐.html">道我庐</a></li>
+      </ul>
+    </div>
+    <div class="tools">
+      <ul>
+        <div class="search">
+          <input placeholder="Search..." type="text">
+          <button type="submit">搜索</button>
+        </div>
+        <li class="hover-underline-animation">注册</li>
+        <li class="hover-underline-animation">登录</li>
+      </ul>
+    </div>
+  </header>
+
+  <h1>艺心苑</h1>
+  <div class="big">
+    <a href="茗茶庵.html">
+      <div class="small  at-item ">
+       <p><span class="subtitle">茗茶庵</span> <br>
+          饮罢方舟去，茶烟袅细香。
+        </p>
+      </div>
+    </a>
+    <a href="平月池1.html">
+      <div class="small  at-item ">
+        <p><span class="subtitle">平月池</span> <br>
+          曲终人不见，江上数峰青
+        </p>
+      </div>
+    </a>
+
+
+    <a href="晖墨亭.html">
+      <div class="small at-item ">
+       <p><span class="subtitle">晖墨亭</span> <br>
+          翰墨怡且乐，书法寿而康。
+        </p>
+      </div>
+    </a>
+    <a href="璘绘坊.html">
+      <div class="small  at-item ">
+        <p><span class="subtitle">璘绘坊</span> <br>
+          远看山有色，近听水无声。
+        </p>
+      </div>
+    </a>
+
+  </div>
+  <div class="custom-cursor-outer" id="customCursorOuter"></div>
+  <div class="custom-cursor-inner" id="customCursorInner"></div>
+  <script src="js\cursor.js"></script>
+
+</body>
+
+</html>

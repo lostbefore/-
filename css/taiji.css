@@ -1,0 +1,84 @@
+.taiji {
+  display: inline-block;
+  width: 24px;
+  height: 12.8px;
+  border: 0.5px solid #0a9f2b;
+  border-bottom: 12.5px solid #0a9f2b;
+  border-radius: 50%;
+  box-sizing: initial;
+
+}
+
+.taiji:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  background: #0a9f2b;
+  border: 4px solid #cce6cd;
+  border-radius: 50%;
+  box-sizing: initial;
+}
+
+.taiji:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  background: #cce6cd;
+  border: 4px solid #0a9f2b;
+  border-radius: 50%;
+  box-sizing: initial;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.taiji {
+  animation: rotate360 2s linear infinite;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  /* 第一个元素宽度自适应，第二个元素占据剩余空间 */
+  align-items: center;
+  column-gap: 10px;
+  /* Add some spacing between the elements */
+}
+
+
+.grid-container:hover {
+  transform: translateX(-10px);
+}
+
+.grid-container:hover{
+  color: #d5794f;
+}
+
+.grid-container:hover .taiji:after {
+  background: #cce6cd;
+  border: 4px solid #d5794f;
+}
+
+.grid-container:hover .taiji {
+  border: 0.5px solid #d5794f;
+  border-bottom: 12.5px solid #d5794f;
+}
+
+.grid-container:hover .taiji:before {
+  background: #d5794f;
+  border: 4px solid #cce6cd;
+}

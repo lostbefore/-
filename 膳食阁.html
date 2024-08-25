@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>膳食阁</title>
+	<link rel="icon" type="image/png" href="..\logo群\logo3.png">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/ink.css">
+	<link rel="stylesheet" href="css/ink2.css">
+	<link rel="stylesheet" href="css/taichi.css">
+	<link rel="stylesheet" href="css/shouyefenlei.css">
+	<link rel="stylesheet" href="css/cursor.css">
+	<link rel="stylesheet" href="css/index.css">
+    
+
+</head>
+<style>
+    .container2 {
+            max-width:1000px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        li {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color:darkgreen;
+            margin-top: 20px; /* Add some top margin for better spacing */
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .container1 {
+  height: 200px;
+  width: 350px;
+  border-radius: 1em;
+  margin-right: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px #dbdbdb;
+  font-family: sans-serif;
+  left :-150px;
+  position:absolute;
+}
+
+.palette {
+  display: flex;
+  height: 86%;
+  width: 100%;
+}
+
+.color {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: flex 0.1s linear;
+}
+
+.color span {
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+
+.color:nth-child(1) {
+  background: #264653;
+}
+
+.color:nth-child(2) {
+  background: #2a9d8f;
+}
+
+.color:nth-child(3) {
+  background: #e9c46a;
+}
+
+.color:nth-child(4) {
+  background: #f4a261;
+}
+
+.color:nth-child(5) {
+  background: #e76f51;
+}
+
+.color:hover {
+  flex: 2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.color:hover span {
+  opacity: 1;
+}
+
+#stats {
+  height: 14%;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  box-sizing: border-box;
+  color: #bebebe;
+}
+
+#stats svg {
+  fill: #bebebe;
+  transform: scale(1.2);
+}
+
+
+</style>
+
+<body>
+	<header>
+		<div class="nav-header">
+			<img src="..\logo群\logo3.png" alt="">
+			<img src="img\字体.png" alt="" style="width: 130px;">
+		</div>
+		<div class="navbar-brandE">
+			<ul>
+				<li class="hover-underline-animation"><a href="index.html">养生道</a></li>
+				<li class="hover-underline-animation"><a href="养生会.html">养生会</a></li>
+				<li class="hover-underline-animation"><a href="养生鉴.html">养生鉴</a></li>
+				<li class="hover-underline-animation"><a href="养生行.html">养生行</a></li>
+				<li class="hover-underline-animation"><a href="膳食阁.html">膳食阁</a></li>
+				<li class="hover-underline-animation"><a href="养生肆.html">养生肆</a></li>
+				<li class="hover-underline-animation"><a href="艺心苑.html">艺心苑</a></li>
+				<li class="hover-underline-animation"><a href="道我庐.html">道我庐</a></li>
+			</ul>
+		</div>
+		<div class="tools">
+			<ul>
+				<div class="search">
+					<input placeholder="Search..." type="text">
+					<button type="submit">搜索</button>
+				</div>
+				<li class="hover-underline-animation">注册</li>
+				<li class="hover-underline-animation">登录</li>
+			</ul>
+		</div>
+	</header>
+	<main>
+		
+		<div class="user-card">
+			<!-- 用户资料卡片 -->
+			<div class="user-img">
+				<div class="user-bgi">
+					<img src="img/user-bgi.png" alt="">
+				</div>
+				<div class="user-head">
+					<img src="img/user.png" alt="">
+				</div>
+			</div>
+			<div class="user-message">
+				<div class="user-icon">
+				</div>
+				<div class="user-title">
+					<h3> 须弥芥子 </h3>
+					<span>晚上少看点手机，对手机不好</span>
+					<span></span>
+					<div class="sanlie">
+						<div class="dianzan">
+							<p><strong>点赞 </strong></p>
+							<p>120 </p>
+						</div>
+						<div class="shoucang">
+							<p><strong>收藏 </strong></p>
+							<p> 120</p>
+						</div>
+						<div class="guanzhu">
+							<p><strong>关注</strong></p>
+							<p> 120 </p>
+						</div>
+
+					</div>
+					
+					<div class="u-more u-button">
+						<p class="u-button-content">查看更多</p>
+					</div>
+				</div>
+
+
+			</div>
+			<!-- 更多用户信息 -->
+		</div>
+	    
+		<div class="article-list cd-main-content  ">
+
+<div class="container2">
+    <li>
+        <h2>你的每日膳食</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>星期日</th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                    <th>星期六</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 表格主体由JavaScript生成 -->
+            </tbody>
+        </table>
+        <h2>看看其他人的分享吧</h2>
+    </li>
+</div>
+
+			<div class="article-card  wow">
+				<img src="img/sfc.jpeg" alt="Article Image">
+				<div class="pre-text">
+					<h1>色香味俱佳，今日私房菜大公开！</h1>
+					<p>品味人生，我今天为自己烹制了一道色香味俱佳的私房菜。葱姜蒜香四溢，入口鲜嫩多汁，仿佛带你漫游舌尖的美好世界。分享美食，分享幸福！</p>
+					<div class="cd-btn cd-modal-trigger">阅读更多</div>
+				</div>
+			</div>
+
+
+
+			<div class="article-card donghua wow">
+				<img src="img/smz.webp" alt="Article Image">
+				<div class="pre-text">
+					<h1>懒人也能吃出仙气，我的快手健康三明治！</h1>
+					<p>生活匆匆忙忙，但我从不妥协于快餐。今天分享我的快手健康三明治，新鲜蔬菜、瘦肉，夹心层层满满正能量。简单易做，懒人也能吃出仙气！</p>
+					<div class="cd-btn cd-modal-trigger1">阅读更多</div>
+				</div>
+
+			</div>
+			
+			
+			<div class="article-card donghua wow">
+				<img src="img/sct.jpg" alt="Article Image">
+				<div class="pre-text">
+					<h1>健康养生，一碗营养满满的蔬菜汤！</h1>
+					<p>用繁忙的一天过后，给自己来一份健康养生。蔬菜汤清甜爽口，满满的营养补给让疲惫一扫而空。和大家分享这份简单而美好的生活仪式。</p>
+					<div class="cd-btn cd-modal-trigger">阅读更多</div>
+				</div>
+			</div>
+			<div class="article-card donghua wow">
+				<img src="img/ss.jpg" alt="Article Image">
+				<div class="pre-text">
+					<h1>美味与健康的完美结合，今日的素食寿司大公开！</h1>
+					<p>挑战传统，我今天创意十足地制作了一份素食寿司。新鲜的蔬菜搭配香糯的米饭，在舌尖绽放出美味与健康的完美交融。素食也可以如此精彩！</p>
+					<div class="cd-btn cd-modal-trigger">阅读更多</div>
+				</div>
+			</div>
+			<div class="article-card donghua wow">
+				<img src="img/dg.jpg" alt="Article Image">
+				<div class="pre-text">
+					<h1>甜蜜诱惑，手工制作的巧克力榛果酱蛋糕！</h1>
+					<p>分享一份甜蜜的幸福，今天烤制了手工制作的巧克力榛果酱蛋糕。细腻的口感中隐藏着浓郁巧克力和香浓榛果的香气，仿佛沉浸在甜蜜的诱惑之中。</p>
+					<div class="cd-btn cd-modal-trigger">阅读更多</div>
+				</div>
+			</div>
+			<div class="article-card donghua wow">
+				<img src="img/yg.webp" alt="Article Image">
+				<div class="pre-text">
+					<h1>世界各地的味蕾之旅，今日的异国料理大揭秘！</h1>
+					<p> 不出门也能环游世界，我用心烹制了一道道异国风情的料理。从东方的辛香到西方的醇厚，每一口都是一场味蕾的盛宴。和大家一起畅游口味的广阔海洋！</p>
+					<div class="cd-btn cd-modal-trigger">阅读更多</div>
+				</div>
+			</div>
+		</div>
+		
+<div class="goals-tasks">
+			
+
+                <div class="container1">
+                    <div class="palette">
+                      <div class="color"><span>健康</span></div>
+                      <div class="color"><span>均衡</span></div>
+                      <div class="color"><span>合理</span></div>
+                      <div class="color"><span>营养</span></div>
+                      <div class="color"><span>丰富</span></div>
+                    </div>
+                    <div id="stats">
+                      <span>合理膳食</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <path d="M4 7.5c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5S5.5 9.83 5.5 9 4.83 7.5 4 7.5zm10 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5-.67-1.5-1.5-1.5zm-5 0c-.83 0-1.5.67-1.5 1.5s.67 1.5 1.5 1.5 1.5-.67 1.5-1.5S9.83 7.5 9 7.5z"></path>
+                      </svg>
+                    </div>
+                  </div>
+				
+			</div>
+        </div>
+       
+                
+	</main>
+    
+
+
+
+	<div class="custom-cursor-outer" id="customCursorOuter"></div>
+	<div class="custom-cursor-inner" id="customCursorInner"></div>
+	<script src="js/cursor.js"></script>
+	<script src="js/jquery-2.1.4.js"></script>
+	<script src="js/wow/wow.min.js"></script>
+	<script src="js/ink.js"></script>
+	<script src="js/ink2.js"></script>
+    <script>
+        function generateCalendar() {
+            // 获取当前日期
+            let currentDate = new Date();
+            // 获取当前月份的第一天
+            currentDate.setDate(1);
+            // 获取当前月份的第一天是星期几
+            let firstDayOfWeek = currentDate.getDay();
+            // 获取当前月份的总天数
+            let lastDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+
+            // 获取表格元素
+            let tableBody = document.querySelector('tbody');
+
+            // 清空表格主体内容
+            tableBody.innerHTML = '';
+
+            // 循环生成表格行
+            for (let i = 0; i < 6; i++) {
+                // 创建表格行
+                let row = document.createElement('tr');
+
+                // 循环生成表格列
+                for (let j = 0; j < 7; j++) {
+                    // 计算当前单元格的日期
+                    let date = i * 7 + j + 1 - firstDayOfWeek;
+
+                    // 创建表格列
+                    let cell = document.createElement('td');
+
+                    // 判断日期是否在当前月份范围内
+                    if (date > 0 && date <= lastDayOfMonth) {
+                        // 设置单元格内容为日期
+                        cell.textContent = date;
+
+                        // 创建输入框
+                        let input = document.createElement('input');
+                        input.type = 'text';
+
+                        // 将输入框添加到单元格中
+                        cell.appendChild(input);
+                    }
+
+                    // 将单元格添加到行中
+                    row.appendChild(cell);
+                }
+
+                // 将行添加到表格主体中
+                tableBody.appendChild(row);
+            }
+        }
+
+        // 在页面加载时生成日历
+        document.addEventListener("DOMContentLoaded", generateCalendar);
+    </script>
+	
+	<script src="js/taichi.js"></script>
+
+	<script>
+		(new WOW().init())(jQuery);
+	</script>
+</body>
+
+</html>

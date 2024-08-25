@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>平月池</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <link rel="icon" type="image/png" href="..\logo群\logo3.png">
+  <link rel="stylesheet" href="css/music.css">
+  <link rel="stylesheet" href="css/cursor.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/video.css">
+</head>
+<style>
+  .gallery {
+    --s: 160px;
+    /* control the size */
+    --g: 15px;
+    /* control the gap */
+    display: grid;
+    margin: calc(var(--s) + var(--g));
+    z-index: 2000;
+  }
+
+  .gallery>img {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 0.866;
+    object-fit: cover;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0);
+    transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .2s linear;
+  }
+
+  .gallery>img:hover {
+    filter: grayscale(0);
+    z-index: 30;
+    --_t: 1.1;
+  }
+
+  .gallery>img:nth-child(1) {
+    --_x: calc(-100% - var(--g))
+  }
+
+  .gallery>img:nth-child(7) {
+    --_x: calc(100% + var(--g))
+  }
+
+  .gallery>img:nth-child(3),
+  .gallery>img:nth-child(5) {
+    --_y: calc(-75% - .87*var(--g))
+  }
+
+  .gallery>img:nth-child(4),
+  .gallery>img:nth-child(6) {
+    --_y: calc(75% + .87*var(--g))
+  }
+
+  .gallery>img:nth-child(3),
+  .gallery>img:nth-child(4) {
+    --_x: calc(-50% - .5*var(--g))
+  }
+
+  .gallery>img:nth-child(5),
+  .gallery>img:nth-child(6) {
+    --_x: calc(50% + .5*var(--g))
+  }
+
+
+
+  .card {
+    text-align: center;
+    transition: .3s cubic-bezier(.6, .4, 0, 1), transform .15s ease;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .card p {
+    position: absolute;
+    z-index: 9999;
+    top: 75px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    color: rgb(107, 255, 248);
+    font-size: 28px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .bgc {
+    margin: auto;
+    text-align: center;
+
+    padding: 50px;
+    background-color: #0f0d1b8d;
+    place-content: center;
+  }
+
+  h1 {
+    margin-top: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 3px solid #d2efe3;
+    color: rgba(208, 247, 250, 0.9);
+    font-size: 50px;
+    text-align: center;
+  }
+
+  h2 {
+    margin-top: 480px;
+    font-size: 140px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .text-quote {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 28px;
+    color: #ffffff;
+    padding-bottom: 60px;
+  }
+
+  .music-begin {
+    transition: all 0.5s;
+  }
+</style>
+
+<body>
+
+    <header>
+      <div class="nav-header">
+        <img src="..\logo群\logo3.png" alt="">
+        <img src="img\字体.png" alt="" style="width: 130px;">
+      </div>
+      <div class="navbar-brandE">
+        <ul>
+          <li class="hover-underline-animation"><a href="index.html">养生道</a></li>
+          <li class="hover-underline-animation"><a href="养生行.html">养生行</a></li>
+          <li class="hover-underline-animation"><a href="养生会.html">养生会</a></li>
+          <li class="hover-underline-animation"><a href="养生鉴.html">养生鉴</a></li>
+          <li class="hover-underline-animation"><a href="膳食阁.html">膳食阁</a></li>
+          <li class="hover-underline-animation"><a href="养生肆.html">养生肆</a></li>
+          <li class="hover-underline-animation"><a href="艺心苑.html">艺心苑</a></li>
+          <li class="hover-underline-animation"><a href="道我庐.html">道我庐</a></li>
+        </ul>
+      </div>
+      <div class="tools">
+        <ul>
+          <div class="search">
+            <input placeholder="Search..." type="text">
+            <button type="submit">搜索</button>
+          </div>
+          <li class="hover-underline-animation">注册</li>
+          <li class="hover-underline-animation">登录</li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="bg-video">
+      <video class="v1" autoplay muted loop>
+        <source src="adu/平乐池.mp4">
+      </video>
+    </div>
+    </div>
+    <div class="fade-up music-begin">
+      <h2>平月池</h2>
+      <div class="text-quote fade-up ">
+        <span>耳机线像是输液管，听音乐的时候很像生病打点滴，是一个治愈的过程。</span>
+      </div>
+    </div>
+
+    <div class="bgc">
+
+      <h1>音乐蜂巢</h1>
+      <div class="text-quote fade-up">
+        <span>曲终人不见，江上数峰青。——钱起《省试湘灵鼓瑟》</span>
+      </div>
+      <div class="gallery fade-up card">
+        <img src="img/蜂巢 (1).jpg" alt="" data-title="蝉雨" id="img1">
+        <img src="img/蜂巢 (2).jpg" alt="" data-title="冬泉" id="img2">
+        <img src="img/蜂巢 (3).jpg" alt="" data-title="叶鸣" id="img3">
+        <img src="img/蜂巢 (1).png" alt="" data-title="春雪" id="img4">
+        <img src="img/蜂巢 (2).png" alt="" data-title="秋荷" id="img5">
+        <img src="img/蜂巢 (3).png" alt="" data-title="蛙鼓" id="img6">
+        <img src="img/蜂巢 (4).png" alt="" data-title="海风" id="img7">
+      </div>
+
+      <div id="songs-one" id="songs-one-content">
+        <h1>冥想指导</h1>
+        <div class="text-quote fade-up">
+          <span>凤翼象参差，清音真妙绝。鹤背载刚风，缑山弄明月。</span>
+        </div>
+        <div class="center">
+          <div id="songs-container">
+            <!-- SONG -->
+            <div class="song fade-up">
+
+              <div class="song-img">
+                <img src="img/冥想 (4).jpg" alt="song">
+              </div>
+
+              <div class="song-details">
+                <div class="song-details-content">
+                  <div class="song-name">自然吐息</div>
+                  <div class="artist-name">放松心情</div>
+                </div>
+                <div class="music-player">
+
+                  <div class="play-song mouse">
+                    <img src="img/play.png" alt="play" data-song="blindinglights">
+                    <!--   DATA-SONG AND DATA-AUDIO VALUE SHOULD MATCH   -->
+                    <audio data-audio="blindinglights">
+                      <source src="music/The-Weeknd-Blinding-Lights-_Lyrics_.ogg" type="audio/ogg">
+                      <source src="music/The Weeknd - Blinding Lights (Lyrics).mp3" type="audio/mp3">
+                    </audio>
+                  </div>
+                  <div class="download-song mouse">
+                    <a href="music/The Weeknd - Blinding Lights (Lyrics).mp3"
+                      download="Blinding Lights - Arlo Brown">4.1K<img src="img/download.png" alt="download"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="song fade-up">
+
+              <div class="song-img">
+                <img src="img/冥想 (1).jpg" alt="song">
+              </div>
+
+              <div class="song-details">
+                <div class="song-details-content">
+                  <div class="song-name">心凝神释</div>
+                  <div class="artist-name">放空大脑</div>
+                </div>
+                <div class="music-player">
+
+                  <div class="play-song mouse">
+                    <img src="img/play.png" alt="play" data-song="blindinglights">
+                    <!--   DATA-SONG AND DATA-AUDIO VALUE SHOULD MATCH   -->
+                    <audio data-audio="blindinglights">
+                      <source src="music/The-Weeknd-Blinding-Lights-_Lyrics_.ogg" type="audio/ogg">
+                      <source src="music/The Weeknd - Blinding Lights (Lyrics).mp3" type="audio/mp3">
+                    </audio>
+                  </div>
+                  <div class="download-song mouse">
+                    <a href="music/The Weeknd - Blinding Lights (Lyrics).mp3"
+                      download="Blinding Lights - Arlo Brown">4.1K<img src="img/download.png" alt="download"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="song fade-up">
+
+              <div class="song-img">
+                <img src="img/冥想 (2).jpg" alt="song">
+              </div>
+
+              <div class="song-details">
+                <div class="song-details-content">
+                  <div class="song-name">道法合一</div>
+                  <div class="artist-name">提升专注力</div>
+                </div>
+                <div class="music-player">
+
+                  <div class="play-song mouse">
+                    <img src="img/play.png" alt="play" data-song="blindinglights">
+                    <!--   DATA-SONG AND DATA-AUDIO VALUE SHOULD MATCH   -->
+                    <audio data-audio="blindinglights">
+                      <source src="music/The-Weeknd-Blinding-Lights-_Lyrics_.ogg" type="audio/ogg">
+                      <source src="music/The Weeknd - Blinding Lights (Lyrics).mp3" type="audio/mp3">
+                    </audio>
+                  </div>
+                  <div class="download-song mouse">
+                    <a href="music/The Weeknd - Blinding Lights (Lyrics).mp3"
+                      download="Blinding Lights - Arlo Brown">4.1K<img src="img/download.png" alt="download"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="song fade-up">
+
+              <div class="song-img">
+                <img src="img/冥想 (3).jpg" alt="song">
+              </div>
+
+              <div class="song-details">
+                <div class="song-details-content">
+                  <div class="song-name">无我两忘</div>
+                  <div class="artist-name">睡前助眠</div>
+                </div>
+                <div class="music-player">
+
+                  <div class="play-song mouse">
+                    <img src="img/play.png" alt="play" data-song="blindinglights">
+                    <!--   DATA-SONG AND DATA-AUDIO VALUE SHOULD MATCH   -->
+                    <audio data-audio="blindinglights">
+                      <source src="music/The-Weeknd-Blinding-Lights-_Lyrics_.ogg" type="audio/ogg">
+                      <source src="music/The Weeknd - Blinding Lights (Lyrics).mp3" type="audio/mp3">
+                    </audio>
+                  </div>
+                  <div class="download-song mouse">
+                    <a href="music/The Weeknd - Blinding Lights (Lyrics).mp3"
+                      download="Blinding Lights - Arlo Brown">4.1K<img src="img/download.png" alt="download"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="headphone img text">
+            <img src="img/headphone.png" title="headphone zone" class="text" alt="headphone">
+          </div>
+          <div class="fenxiang img text">
+            <img src="img/分享.png" title="" class="text" alt="">
+          </div>
+          <div class="music-indicator">
+            <span style="--i:1;" class="music-indicator-span"></span>
+            <span style="--i:2;" class="music-indicator-span "></span>
+            <span style="--i:3;" class="music-indicator-span "></span>
+            <span style="--i:4;" class="music-indicator-span "></span>
+          </div>
+          <div class="progress-bar-container fade-in">
+            <div class="progressbar"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="custom-cursor-outer" id="customCursorOuter"></div>
+    <div class="custom-cursor-inner" id="customCursorInner"></div>
+    <script name="蜂巢">
+      // 定义音乐数组
+      const audios = [
+        new Audio('music/夏天.mp3'),
+        new Audio('music/夏天.mp3'),
+        new Audio('music/海风.mp3'),
+        new Audio('music/夏天.mp3'),
+        new Audio('music/海风.mp3'),
+        new Audio('music/夏天.mp3'),
+        new Audio('music/夏天.mp3')
+      ];
+
+      // 获取7个图片元素
+      const imgs = [
+        document.getElementById('img1'),
+        document.getElementById('img2'),
+        document.getElementById('img3'),
+        document.getElementById('img4'),
+        document.getElementById('img5'),
+        document.getElementById('img6'),
+        document.getElementById('img7')
+      ];
+
+      let isPlaying = false;
+      let currentIndex = -1; // 初始索引设置为一个无效值
+
+      // 为每个图片添加点击事件
+      imgs.forEach((img, index) => {
+        img.addEventListener('click', function () {
+          // 如果当前有音乐正在播放，暂停它
+          if (isPlaying) {
+            audios[currentIndex].pause();
+          }
+
+          // 如果点击的不是当前正在播放的音乐，播放新的音乐
+          if (currentIndex !== index) {
+            audios.forEach(audio => audio.pause()); // 暂停所有音乐
+            audios[index].play(); // 播放点击的音乐
+            currentIndex = index;
+            isPlaying = true;
+          } else {
+            // 如果点击的是当前正在播放的音乐，重置状态
+            currentIndex = -1;
+            isPlaying = false;
+          }
+        });
+      });
+
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/img-title.js"></script>
+    <script src="js/music-pace.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/flower.js"></script>
+    <script name="视差">
+      // 获取需要添加视差效果的元素
+      const sections = document.querySelectorAll('.music-begin');
+
+      // 使用IntersectionObserver监测元素进入视口
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          // 获取元素的滚动位置
+          const yPos = -entry.target.getBoundingClientRect().top;
+
+          // 根据距离设置不同的滚动速度
+          const speed = entry.intersectionRatio * 0.5;
+
+          entry.target.style.transform = `translateY(${yPos * speed}px)`;
+        });
+      }, {
+        rootMargin: '0px 0px -100px 0px'
+      });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+
+      // 监听滚动事件
+      window.addEventListener('scroll', () => {
+
+        sections.forEach(section => {
+
+          // 计算元素距离顶部的位置
+          const yPos = -section.getBoundingClientRect().top;
+
+          // 根据位置设置元素的滚动样式
+          section.style.transform = `translateY(${yPos * 0.7}px)`;
+        });
+
+      });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: #cce6cd;
+}
+::-webkit-scrollbar-track{
+  width: 8px;
+}
+::-webkit-scrollbar{
+  width: 8px;
+  background:#cce6cd;
+}
+::-webkit-scrollbar-thumb{
+  background: #3c6440;
+}
+
+header {
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color:rgba(31, 39, 40, 0.9);
+    z-index: 9999;
+    height: 45px;
+    box-sizing: initial;
+}
+.nav-header {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.nav-header img{
+    width: 40px;
+    
+}
+
+.navbar-brandE {
+    top: 0;
+    position: fixed;
+    margin-left: 180px;
+}
+.navbar-brandE {
+  top: 15px;
+}
+.navbar-brandE ul,.tools ul {
+    list-style: none;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+header ul li {
+    font-weight: 400;
+    margin-left: 15px;
+    transition: all 0.5s linear;
+    padding: 5px 10px;
+}
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(126, 184, 164);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.tools ul{
+    margin-right: 40px;
+}
+.tools ul li {
+    width: 50px;
+    float: left;
+    height: 100%;
+    padding: 14px 7px;
+    box-sizing: border-box;
+    color: #cce6cd;
+}
+
+a {
+    text-decoration: none !important;
+    color: inherit;
+}
+a:link,a:visited{
+    color:#FFF;
+    text-decoration:none;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+  margin-right: 12px;
+
+}
+
+.search input[type="text"] {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f4fff4;
+  line-height: initial;
+}
+
+.search button[type="submit"] {
+  background-color: rgb(70, 155, 145);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .9s ease;
+}
+
+.search button[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 172, 118);
+}
+
+
+  
+ @media screen and (max-width: 1000px) {
+   .navbar-brandE li,a {
+     display: none;
+   }
+ }
+
+.donghua {
+  animation-name: fadeinup;
+  animation-duration: 1.7s;
+  }
+
+@keyframes fadeinup {
+  from {
+      transform: translateY(10px) ;
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  }

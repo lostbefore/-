@@ -1,0 +1,142 @@
+.great_ultimate_eight_diagrams_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: circularRotation linear infinite 30s; */
+}
+
+/* 八卦 */
+.eight_diagrams_box {
+    position: relative;
+}
+
+.eight_diagrams {
+    width: 410px;
+    height: 410px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.eight_diagrams_item {
+    width: 100px;
+    position: absolute;
+}
+
+.yin_yang {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.divinatory_name {
+    /* 文字两端对齐 */
+    text-align-last: justify;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.direction {
+    margin-top: 2px;
+    text-align-last: justify;
+    padding: 0 10px;
+}
+
+.yy_box {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yy_t,
+.yy_m,
+.yy_b {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.yy_m {
+    margin-top: 8px;
+}
+
+.yy_b {
+    margin-top: 8px;
+}
+
+.yy_t div,
+.yy_m div,
+.yy_b div {
+    width: 100%;
+    height: 8px;
+}
+
+/* 太极 */
+.great_ultimate_box {
+    position: absolute;
+}
+
+.divinatory_name {
+    transform: scale(1.5);
+    color: #607858;
+}
+
+.great_ultimate {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    border: #97b5ac solid 1px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* 圆球上半部分为白色，下半部分为黑色 */
+    background: linear-gradient(to bottom,
+            #fff 0%,
+            #fff 50%,
+            #5eab5b 50%,
+            #5eab5b 100%);
+    position: relative;
+    transform: rotate(-90deg);
+}
+
+.great_ultimate::before {
+    position: absolute;
+    content: "";
+    width: 45.5px;
+    height: 45.5px;
+    border-radius: 50%;
+    border: 45px solid #5eab5b;
+    /* 左侧黑球套白点  */
+    background-color: #fff;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.great_ultimate::after {
+    position: absolute;
+    content: "";
+    width: 45.5px;
+    height: 45.5px;
+    border-radius: 50%;
+    border: 45px solid #fff;
+    /* 右侧白球套黑点 */
+    background-color: #5eab5b;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes circularRotation {
+    form {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

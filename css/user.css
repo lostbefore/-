@@ -1,0 +1,50 @@
+ 
+ .user-head img {
+    border: 5px solid #fafffb;
+    z-index: 20;
+    background-image: url(/img/user-bgi.png);
+  }
+  .u-more {
+    border-top: 2px solid #b1bfbd;
+    margin-top: 10px;
+  }
+  
+  .u-button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    background: #47674e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+  }
+  .u-more p{
+    color: #e2efed;
+  }
+  .u-button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .u-button-content {
+    position: relative;
+    line-height: 3;
+    z-index: 1;
+  }
+  
+  .u-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(82.3deg,
+        rgba(150, 93, 233, 1) 10.8%,
+        rgba(99, 88, 238, 1) 94.3%);
+    transition: all 0.475s;
+  }
+  

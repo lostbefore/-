@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>养生会</title>
+	<link rel="icon" type="image/png" href="..\logo群\logo3.png">
+	<link rel="stylesheet" href="css/cursor.css">
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.min.css" />
+	<link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.min.css" />
+	<!-- Feather Icon-->
+	<link href="vendor/icons/feather.css" rel="stylesheet" type="text/css">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="css/header.css">
+	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/meeting.css">
+	<link rel="stylesheet" href="css/user.css">
+</head>
+
+<body>
+	<header>
+		<div class="nav-header">
+			<img src="..\logo群\logo3.png" alt="">
+			<img src="img\字体.png" alt="" style="width: 130px;">
+		</div>
+		<div class="navbar-brandE">
+			<ul>
+				<li class="hover-underline-animation"><a href="index.html">养生道</a></li>
+				<li class="hover-underline-animation"><a href="养生行.html">养生行</a></li>
+				<li class="hover-underline-animation"><a href="养生会.html">养生会</a></li>
+				<li class="hover-underline-animation"><a href="养生鉴.html">养生鉴</a></li>
+				<li class="hover-underline-animation"><a href="膳食阁.html">膳食阁</a></li>
+				<li class="hover-underline-animation"><a href="养生肆.html">养生肆</a></li>
+				<li class="hover-underline-animation"><a href="艺心苑.html">艺心苑</a></li>
+				<li class="hover-underline-animation"><a href="道我庐.html">道我庐</a></li>
+			</ul>
+		</div>
+		<div class="tools ">
+			<ul>
+				<div class="search">
+					<input placeholder="Search..." type="text">
+					<button type="submit">搜索</button>
+				</div>
+				<li class="hover-underline-animation">注册</li>
+				<li class="hover-underline-animation">登录</li>
+			</ul>
+		</div>
+	</header>
+	<div class="zhuti">
+		<div class="py-4">
+			<div class="container">
+				<div class="row">
+					<!-- Main Content -->
+					<main class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-12">
+						<div class="box shadow-sm border rounded bg-white mb-3 osahan-share-post">
+							<ul class="nav nav-justified border-bottom osahan-line-tab" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+										aria-controls="home" aria-selected="true"><i class="feather-edit"></i> 发布帖子</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+										aria-controls="profile" aria-selected="false"><i class="feather-image"></i>
+										上传图片</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+										aria-controls="contact" aria-selected="false"><i class="feather-clipboard"></i>
+										写文章</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="home" role="tabpanel"
+									aria-labelledby="home-tab">
+									<div class="p-3 d-flex align-items-center w-100" href="#">
+										<div class="dropdown-list-image mr-3">
+											<img class="rounded-circle" src="img/user.png" alt="">
+											<div class="status-indicator bg-success"></div>
+										</div>
+										<div class="w-100">
+											<textarea placeholder="写下你的想法……"
+												class="form-control border-0 p-0 shadow-none" rows="1"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+									<div class="p-3 w-100">
+										<textarea placeholder="写下你的想法……" class="form-control border-0 p-0 shadow-none"
+											rows="3"></textarea>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+									<div class="p-3 w-100">
+										<textarea placeholder="写文章……" class="form-control border-0 p-0 shadow-none"
+											rows="3"></textarea>
+									</div>
+								</div>
+							</div>
+							<div class="border-top p-3 d-flex align-items-center">
+								<div class="mr-auto"><a href="#" class="text-link small"><i class="feather-map-pin"></i>
+										添加定位</a></div>
+								<div class="flex-shrink-1">
+									<button type="button" class="btn btn-light btn-sm">预览</button>
+									<button type="button" class="btn btn-primary btn-sm">发布</button>
+								</div>
+							</div>
+						</div>
+						<div class="box shadow-sm border rounded bg-white mb-3 osahan-post">
+							<div class="p-3 d-flex align-items-center border-bottom osahan-post-header">
+								<div class="dropdown-list-image mr-3">
+									<img class="rounded-circle" src="img/p5.png" alt="">
+									<div class="status-indicator bg-success"></div>
+								</div>
+								<div class="font-weight-bold">
+									<div class="text-truncate">邦之彦</div>
+									<div class="small text-gray-500">bangzhiyang</div>
+								</div>
+								<span class="ml-auto small">3 小时</span>
+							</div>
+							<div class="p-3 border-bottom osahan-post-body">
+								<p class="mb-0">秋天来了，天气开始转凉，这正是一个养生修身的好季节！
+									最近我试着在日常生活中加入一些小习惯，既能保暖防寒，也有利于健康。
+									比如每天早上起床后，我都会做几个简单的伸展动作，活动筋骨。同时喝一杯热水，可以提神醒脑。
+									如果你也想养成养生的好习惯，不妨跟我一起试试这些小窍门。一点一点积累，相信我们的身体会感觉更加健康！ <a href="#">laboris
+										consequat.</a></p>
+							</div>
+							<div class="p-3 border-bottom osahan-post-footer">
+								<a href="#" class="mr-3 text-secondary"><i class="feather-heart text-danger"></i> 16</a>
+								<a href="#" class="mr-3 text-secondary"><i class="feather-message-square"></i> 8</a>
+								<a href="#" class="mr-3 text-secondary"><i class="feather-share-2"></i> 2</a>
+							</div>
+
+						</div>
+						<div class="mb-3 shadow-sm rounded box bg-white osahan-slider-main">
+							<div class="osahan-slider">
+								<div class="osahan-slider-item">
+									<a href="#">
+										<div class="shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3">
+											<div class="d-flex align-items-center p-3 job-item-header">
+												<div class="overflow-hidden mr-2">
+													<h6 class="font-weight-bold text-dark mb-1">养生道人</h6>
+													<div class="text-truncate text-primary">科普交流</div>
+													<div class="small text-gray-500">养生基本常识</div>
+												</div>
+												<img class="img-fluid ml-auto" src="img/l1.png" alt="">
+											</div>
+											<div
+												class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+												<div class="overlap-rounded-circle d-flex">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p1.png" alt=""
+														data-original-title="道人">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p2.png" alt=""
+														data-original-title="隔热">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p3.png" alt=""
+														data-original-title="滚动条">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p4.png" alt=""
+														data-original-title="隔热">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p5.png" alt=""
+														data-original-title="合同法">
+												</div>
+												<span class="font-weight-bold text-primary">18 人</span>
+											</div>
+											<div class="p-3 job-item-footer">
+												<small class="text-gray-500"><i class="feather-clock"></i> 2023</small>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="osahan-slider-item">
+									<a href="#">
+										<div class="shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3">
+											<div class="d-flex align-items-center p-3 job-item-header">
+												<div class="overflow-hidden mr-2">
+													<h6 class="font-weight-bold text-dark mb-1 ">量子佛学</h6>
+													<div class="text-truncate text-primary">赛博修仙</div>
+													<div class="small text-gray-500">南无爱因斯坦南无海森堡
+													</div>
+												</div>
+												<img class="img-fluid ml-auto" src="img/l4.png" alt="">
+											</div>
+											<div
+												class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+												<div class="overlap-rounded-circle d-flex">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p13.png" alt=""
+														data-original-title="我">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p1.png" alt=""
+														data-original-title="吧">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p2.png" alt=""
+														data-original-title="挺好用">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p3.png" alt=""
+														data-original-title="里">
+												</div>
+												<span class="font-weight-bold text-primary">18 人</span>
+											</div>
+											<div class="p-3 job-item-footer">
+												<small class="text-gray-500"><i class="feather-clock"></i> 2023</small>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="osahan-slider-item">
+									<a href="#">
+										<div class="shadow-sm border rounded bg-white job-item job-item mr-2 mt-3 mb-3">
+											<div class="d-flex align-items-center p-3 job-item-header">
+												<div class="overflow-hidden mr-2">
+													<h6 class="font-weight-bold text-dark mb-1">枸杞厨房</h6>
+													<div class="text-truncate text-primary">食疗养生</div>
+													<div class="small text-gray-500">枸杞、当归、百合
+													</div>
+												</div>
+												<img class="img-fluid ml-auto" src="img/l7.png" alt="">
+											</div>
+											<div
+												class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+												<div class="overlap-rounded-circle d-flex">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p12.png" alt=""
+														data-original-title="李">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p13.png" alt=""
+														data-original-title="养">
+													<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+														data-placement="top" title="" src="img/p2.png" alt=""
+														data-original-title="想吃啥">
+												</div>
+												<span class="font-weight-bold text-primary">18 人</span>
+											</div>
+											<div class="p-3 job-item-footer">
+												<small class="text-gray-500"><i class="feather-clock"></i> 2023</small>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="box mb-3 shadow-sm border rounded bg-white osahan-post">
+							<div class="p-3 d-flex align-items-center border-bottom osahan-post-header">
+								<div class="dropdown-list-image mr-3">
+									<img class="rounded-circle" src="img/p6.png" alt="">
+									<div class="status-indicator bg-success"></div>
+								</div>
+								<div class="font-weight-bold">
+									<div class="text-truncate"> <strong>子之清扬</strong> </div>
+									<div class="small text-gray-500">zizhiqingyang</div>
+								</div>
+								<span class="ml-auto small">3 小时</span>
+							</div>
+							<div class="p-3 border-bottom osahan-post-body">
+								<p>又到了周末，时间过得真快呀！这次我准备带你们一起去郊外露营，感受大自然的美好。
+
+									在准备行程的时候，我特意研究了一下，如何在露营过程中兼顾健康。我们会准备一些野生食材如枸杞和山楂，这些wild
+									food不仅口感极佳，还富含养生功效，可以很好地补充体力。 😍😎 <a href="#">laboris consequat.</a></p>
+								<img src="img/post1.png" class="img-fluid" alt="Responsive image">
+							</div>
+							<div class="p-3 border-bottom osahan-post-footer">
+								<a href="#" class="mr-3 text-secondary"><i class="feather-heart text-danger"></i> 16</a>
+								<a href="#" class="mr-3 text-secondary"><i class="feather-message-square"></i> 8</a>
+								<a href="#" class="mr-3 text-secondary"><i class="feather-share-2"></i> 2</a>
+							</div>
+							<div class="p-3 d-flex align-items-top border-bottom osahan-post-comment">
+								<div class="dropdown-list-image mr-3">
+									<img class="rounded-circle" src="img/p7.png" alt="">
+									<div class="status-indicator bg-success"></div>
+								</div>
+								<div class="font-weight-bold">
+									<div class="text-truncate">隰有游龙<span class="float-right small">2 分钟</span></div>
+									<div class="text-gray-500  text-small">
+										你分享的户外照片真的很棒！能看到大自然的美景和你自己在其中的小小身影，真让人感觉很开阔。可以看出你很热爱大自然，也很喜欢拍照记录自己的旅程。</div>
+								</div>
+							</div>
+							<div class="p-3">
+								<textarea placeholder="添加评论..." class="form-control border-0 p-0 shadow-none"
+									rows="1"></textarea>
+							</div>
+						</div>
+					</main>
+					<aside class="col col-xl-3 order-xl-1 col-lg-6 order-lg-2 col-md-6 col-sm-6 col-12">
+						<div class="box mb-3 shadow-sm border rounded bg-white profile-box text-center">
+							<div class="py-4 px-3 border-bottom">
+								<img src="img/user.png" class="img-fluid mt-2 rounded-circle user-head"
+									alt="Responsive image">
+								<h5 class="font-weight-bold text-dark mb-1 mt-4 user-head">须弥芥子</h5>
+								<p class="mb-0 text-muted">晚上少看点手机，对手机不好</p>
+							</div>
+							<div class="d-flex">
+								<div class="col-6 border-right p-3">
+									<h6 class="font-weight-bold text-dark mb-1">35</h6>
+									<p class="mb-0 text-black-50">群组</p>
+								</div>
+								<div class="col-6 p-3">
+									<h6 class="font-weight-bold text-dark mb-1">85</h6>
+									<p class="mb-0 text-black-50">浏览</p>
+								</div>
+							</div>
+
+							<div class="u-more u-button">
+								<p class="u-button-content">查看更多</p>
+							</div>
+
+						</div>
+						<div class="box shadow-sm mb-3 rounded bg-white ads-box text-center">
+							<img src="img/job1.png" class="img-fluid" alt="Responsive image">
+							<div class="p-3 border-bottom">
+								<h6 class="font-weight-bold text-dark">锐龙全新4K电脑</h6>
+								<p class="mb-0 text-muted">保护视力，辐射小</p>
+							</div>
+							<div class="p-3">
+								<button type="button" class="btn btn-outline-primary pl-4 pr-4"> 点击购买 </button>
+							</div>
+						</div>
+					</aside>
+					<aside class="col col-xl-3 order-xl-3 col-lg-6 order-lg-3 col-md-6 col-sm-6 col-12">
+						<div class="box shadow-sm border rounded bg-white mb-3">
+							<div class="box-title border-bottom p-3">
+								<h6 class="m-0"><strong>你可能认识的人</strong> </h6>
+							</div>
+							<div class="box-body p-3">
+								<div class="d-flex align-items-center osahan-post-header mb-3 people-list">
+									<div class="dropdown-list-image mr-3">
+										<img class="rounded-circle" src="img/p8.png" alt="">
+										<div class="status-indicator bg-success"></div>
+									</div>
+									<div class="font-weight-bold mr-2">
+										<div class="text-truncate"> <strong>英粲</strong> </div>
+										<div class="small text-gray-500">同济大学学生
+										</div>
+									</div>
+									<span class="ml-auto"><button type="button" class="btn btn-light btn-sm"><i
+												class="feather-user-plus"></i></button>
+									</span>
+								</div>
+								<div class="d-flex align-items-center osahan-post-header mb-3 people-list">
+									<div class="dropdown-list-image mr-3">
+										<img class="rounded-circle" src="img/p9.png" alt="">
+										<div class="status-indicator bg-success"></div>
+									</div>
+									<div class="font-weight-bold mr-2">
+										<div class="text-truncate"><strong>甘棠</strong></div>
+										<div class="small text-gray-500">黄渡理工大学学生
+										</div>
+									</div>
+									<span class="ml-auto"><button type="button" class="btn btn-light btn-sm"><i
+												class="feather-user-plus"></i></button>
+									</span>
+								</div>
+								<div class="d-flex align-items-center osahan-post-header mb-3 people-list">
+									<div class="dropdown-list-image mr-3">
+										<img class="rounded-circle" src="img/p10.png" alt="">
+										<div class="status-indicator bg-success"></div>
+									</div>
+									<div class="font-weight-bold mr-2">
+										<div class="text-truncate"><strong>灵雨</strong></div>
+										<div class="small text-gray-500">五道口男子职业技术学校学生
+										</div>
+									</div>
+									<span class="ml-auto"><button type="button" class="btn btn-light btn-sm"><i
+												class="feather-user-plus"></i></button>
+									</span>
+								</div>
+								<div class="d-flex align-items-center osahan-post-header mb-3 people-list">
+									<div class="dropdown-list-image mr-3">
+										<img class="rounded-circle" src="img/p11.png" alt="">
+										<div class="status-indicator bg-success"></div>
+									</div>
+									<div class="font-weight-bold mr-2">
+										<div class="text-truncate"><strong>静姝</strong></div>
+										<div class="small text-gray-500">黄渡理工大学学生
+										</div>
+									</div>
+									<span class="ml-auto"><button type="button" class="btn btn-light btn-sm"><i
+												class="feather-user-plus"></i></button>
+									</span>
+								</div>
+								<div class="d-flex align-items-center osahan-post-header people-list">
+									<div class="dropdown-list-image mr-3">
+										<img class="rounded-circle" src="img/p12.png" alt="">
+										<div class="status-indicator bg-success"></div>
+									</div>
+									<div class="font-weight-bold mr-2">
+										<div class="text-truncate"><strong>伊湄</strong></div>
+										<div class="small text-gray-500">同济大学学生
+										</div>
+									</div>
+									<span class="ml-auto"><button type="button" class="btn btn-light btn-sm"><i
+												class="feather-user-plus"></i></button>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="box shadow-sm mb-3 rounded bg-white ads-box text-center overflow-hidden">
+							<img src="img/ads1.png" class="img-fluid" alt="Responsive image">
+							<div class="p-3 border-bottom">
+								<h6 class="font-weight-bold text-gold">站立半小时</h6>
+								<p class="mb-0 text-muted">远离久坐活动</p>
+							</div>
+							<div class="p-3">
+								<button type="button" class="btn btn-outline-gold pl-4 pr-4"> 活动详情 </button>
+							</div>
+						</div>
+						<div class="box shadow-sm border rounded bg-white mb-3">
+							<div class="box-title border-bottom p-3">
+								<h6 class="m-0"><strong>常用群组</strong>
+								</h6>
+							</div>
+							<div class="box-body p-3">
+								<a href="job-profile.html">
+									<div class="shadow-sm border rounded bg-white job-item mb-3">
+										<div class="d-flex align-items-center p-3 job-item-header">
+											<div class="overflow-hidden mr-2">
+												<h6 class="font-weight-bold text-dark mb-1 ">量子佛学</h6>
+												<div class="text-truncate text-primary">赛博修仙</div>
+												<div class="small text-gray-500">南无爱因斯坦南无海森堡
+												</div>
+											</div>
+											<img class="img-fluid ml-auto" src="img/l3.png" alt="">
+										</div>
+										<div
+											class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+											<div class="overlap-rounded-circle">
+												<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+													data-placement="top" title="" src="img/p9.png" alt=""
+													data-original-title="不到">
+												<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+													data-placement="top" title="" src="img/p10.png" alt=""
+													data-original-title="就">
+												<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+													data-placement="top" title="" src="img/p11.png" alt=""
+													data-original-title="话题">
+												<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+													data-placement="top" title="" src="img/p12.png" alt=""
+													data-original-title="换一台">
+											</div>
+											<span class="font-weight-bold text-muted">18 人</span>
+										</div>
+										<div class="p-3 job-item-footer">
+											<small class="text-gray-500"><i class="feather-clock"></i> 2023</small>
+										</div>
+									</div>
+								</a>
+								<a href="job-profile.html">
+									<div class="shadow-sm border rounded bg-white job-item">
+										<div class="d-flex align-items-center p-3 job-item-header">
+											<div class="overflow-hidden mr-2">
+												<h6 class="font-weight-bold text-dark mb-1">枸杞厨房</h6>
+												<div class="text-truncate text-primary">食疗养生</div>
+												<div class="small text-gray-500">枸杞、当归、百合
+												</div>
+											</div>
+											<img class="img-fluid ml-auto" src="img/l7.png" alt="">
+										</div>
+										<div
+											class="d-flex align-items-center p-3 border-top border-bottom job-item-body">
+											<div class="overlap-rounded-circle">
+												<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+													data-placement="top" title="" src="img/p13.png" alt=""
+													data-original-title="吃饭的">
+												<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+													data-placement="top" title="" src="img/p1.png" alt=""
+													data-original-title="库">
+												<img class="rounded-circle shadow-sm" data-toggle="tooltip"
+													data-placement="top" title="" src="img/p3.png" alt=""
+													data-original-title="教育额">
+											</div>
+											<span class="font-weight-bold text-muted">18 人</span>
+										</div>
+										<div class="p-3 job-item-footer">
+											<small class="text-gray-500"><i class="feather-clock"></i> 2023</small>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="custom-cursor-outer" id="customCursorOuter"></div>
+	<div class="custom-cursor-inner" id="customCursorInner"></div>
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- slick Slider JS-->
+	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
+	<!-- Custom scripts for all pages-->
+	<script src="js/osahan.js"></script>
+	<script src="js/cursor.js"></script>
+</body>
+
+</html>
